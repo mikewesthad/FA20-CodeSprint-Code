@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+html {
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main > * {
+  margin: 3rem 0;
+}
+
+main > *:first-child {
+  margin-top: 0;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 0.25rem 0;
+}
+
+.equation {
+  display: flex;
+  align-items: center;
+}
+
+.equation * {
+  margin: 0 0.5rem;
+}
+
+.equation *:first-child {
+  margin-left: 0;
+}
+
+.equation *:last-child {
+  margin-right: 0;
+}
+
+.equation__input {
+  font-size: inherit;
+  width: 100px;
+  margin-left: 0;
+  padding: 0.25rem;
+  text-align: center;
+}
