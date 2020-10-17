@@ -1,0 +1,18 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.app-title {
+  text-align: center;
+}

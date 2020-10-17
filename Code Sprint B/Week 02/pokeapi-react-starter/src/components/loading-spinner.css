@@ -1,0 +1,31 @@
+/* 
+  Modified from: https://projects.lukehaas.me/css-loaders/ 
+*/
+
+.loader {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.loader {
+  margin: 50px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(98, 36, 245, 0.2);
+  border-right: 1.1em solid rgba(98, 36, 245, 0.2);
+  border-bottom: 1.1em solid rgba(98, 36, 245, 0.2);
+  border-left: 1.1em solid #6224f5;
+  transform: translateZ(0);
+  animation: rotating-animation 1.1s infinite linear;
+}
+
+@keyframes rotating-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
