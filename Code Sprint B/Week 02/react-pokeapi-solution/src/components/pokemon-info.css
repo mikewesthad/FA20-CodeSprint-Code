@@ -1,0 +1,38 @@
+.pokemon {
+  margin: 100px auto;
+}
+
+.pokemon__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pokemon__list li {
+  padding-left: 2rem;
+  text-indent: -1.5rem;
+}
+
+.pokemon__list li::before {
+  content: "🔹 ";
+}
+
+.pokemon__list li:nth-child(even)::before {
+  content: "🔸 ";
+}
+
+.pokemon__name {
+  text-align: center;
+}
+
+.pokemon__images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pokemon__image {
+  width: 200px;
+  image-rendering: pixelated;
+  border: 3px solid #181519;
+}
