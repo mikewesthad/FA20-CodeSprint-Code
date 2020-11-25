@@ -1,0 +1,37 @@
+import React from "react";
+import LoadingSpinner from "./loading-spinner";
+import ErrorMessage from "./error-message";
+import useAllMovies from "../hooks/use-all-movies";
+import Movie from "./movie";
+import "./movie-listing.css";
+
+function MovieListing() {
+  const [movies, isLoading, errorMessage] = useAllMovies();
+
+  return (
+    <div className="movies-container">
+      <h1>Movies</h1>
+      {isLoading && (
+        <LoadingSpinner
+          size="50px"
+          spinnerColor="white"
+          backgroundColor="rgb(255, 255, 255, 0.2)"
+        />
+      )}
+      {errorMessage && <ErrorMessage displayAsCard>{errorMessage}</ErrorMessage>}
+      <ul className="movie-list">
+        {movies.map((movieDoc) => {
+          const movieId = movieDoc.id;
+          const movieData = movieDoc.data();
+          return (
+            <li key={movieId}>
+              <Movie id={movieId} data={movieData} />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+export default MovieListing;

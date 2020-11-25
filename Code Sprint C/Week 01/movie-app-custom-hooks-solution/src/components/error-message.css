@@ -1,0 +1,13 @@
+.error-message {
+  text-align: center;
+  font-style: italic;
+  color: rgb(158, 0, 0);
+}
+
+.error-message--card {
+  max-width: 400px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
