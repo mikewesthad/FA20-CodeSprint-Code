@@ -3,8 +3,6 @@ import ErrorMessage from "./error-message";
 import { auth } from "../data/firebase";
 import "./account-info.css";
 
-console.log(require("fs").readFile);
-
 function AccountInfo(props) {
   const { user } = props;
   const [errorMessage, setErrorMessage] = useState(null);
