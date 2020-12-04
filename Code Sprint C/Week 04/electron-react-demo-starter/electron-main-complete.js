@@ -25,9 +25,8 @@ function createWindow() {
     },
   });
 
-  win.loadURL(
-    isDev ? "http://localhost:3000" : `file://${path.join(__dirname, "build", "index.html")}`
-  );
+  const filePath = `file://${path.join(__dirname, "build", "index.html")}`;
+  win.loadURL(isDev ? "http://localhost:3000" : filePath);
 
   if (isDev) {
     installExtension(REACT_DEVELOPER_TOOLS)
