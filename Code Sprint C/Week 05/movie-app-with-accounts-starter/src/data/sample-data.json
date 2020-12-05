@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Alien",
+    "rating": 4,
+    "releaseYear": 1979
+  },
+  {
+    "title": "Logan",
+    "rating": 4,
+    "releaseYear": 2017
+  },
+  {
+    "title": "Get Out",
+    "rating": 5,
+    "releaseYear": 2017
+  },
+  {
+    "title": "Coco",
+    "rating": 4,
+    "releaseYear": 2017
+  },
+  {
+    "title": "The Witches",
+    "rating": 3,
+    "releaseYear": 1990,
+    "review": "This concept probably works better as a short story than as a film."
+  },
+  {
+    "title": "Before Sunrise",
+    "rating": 5,
+    "releaseYear": 1995
+  },
+  {
+    "title": "Color Out of Space",
+    "rating": 1,
+    "releaseYear": 2019,
+    "review": "This concept probably works better as a short story than as a film."
+  }
+]
