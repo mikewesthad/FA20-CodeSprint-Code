@@ -83,17 +83,14 @@ function AccountInfo(props) {
   } else {
     contents = (
       <>
-        <p>
-          You can log in or create a new account by linking your Google account. Follow the
-          instructions in the pop up window.
-        </p>
+        <p>You can log in or create a new account below using your email address.</p>
         <form className="login-form" onSubmit={(e) => e.preventDefault()}>
           <fieldset className="login-form__fieldset" disabled={isLoading}>
             <div className="login-form__controls">
-              <label htmlFor="username">Username:</label>
+              <label htmlFor="username">Email:</label>
               <input
                 id="username"
-                type="text"
+                type="email"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
