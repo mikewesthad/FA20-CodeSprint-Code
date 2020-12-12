@@ -1,0 +1,29 @@
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  margin: 0 auto;
+  width: 450px;
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #151116;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-form *:first-child {
+  margin-top: 0;
+}
+
+.login-form *:last-child {
+  margin-bottom: 0;
+}
+
+.login-form__button {
+  padding: 0.5rem 1rem;
+}
