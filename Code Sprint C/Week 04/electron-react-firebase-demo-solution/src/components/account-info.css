@@ -1,0 +1,42 @@
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 450px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #151116;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-form__fieldset {
+  border: none;
+}
+
+.login-form__controls {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.login-form *:first-child {
+  margin-top: 0;
+}
+
+.login-form *:last-child {
+  margin-bottom: 0;
+}
+
+.login-form__button {
+  padding: 0.5rem 1rem;
+  margin: 10px;
+}
